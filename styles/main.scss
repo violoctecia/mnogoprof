@@ -64,6 +64,7 @@ header {
 .main {
   .container {
     height: 60vh;
+    min-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -83,6 +84,7 @@ header {
     }
   }
 }
+
 .main .buttons button:hover {
   background: #1730bd;
   color: white;
