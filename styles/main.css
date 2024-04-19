@@ -61,7 +61,7 @@ header .container {
 
 .main .container {
   height: 60vh;
-  min-width: 600px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: end;
