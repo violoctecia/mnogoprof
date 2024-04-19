@@ -14,26 +14,28 @@
   background: url(../images/main-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
+  max-width: 2100px;
+  margin: 0 auto;
 }
 
-@media (max-width: 1960px) {
+@media (max-width: 1930px) {
+  .main_wrapper {
+    background-position: top right -5vw;
+  }
+}
+@media (max-width: 1755px) {
   .main_wrapper {
     background-position: top right -10vw;
   }
 }
-@media (max-width: 1620px) {
+@media (max-width: 1470px) {
   .main_wrapper {
-    background-position: top right -25vw;
+    background-position: top right -24vw;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1310px) {
   .main_wrapper {
-    background-position: top right -40vw;
-  }
-}
-@media (max-width: 1100px) {
-  .main_wrapper {
-    background-position: top right -60vw;
+    background-position: top right -33vw;
   }
 }
 header {
@@ -58,9 +60,14 @@ header .container {
   color: #1730bd;
   font-weight: 400;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.menu ul li a {
+  text-decoration: none;
 }
 
-.menu ul li:hover {
+.menu ul li a:hover {
   opacity: 70%;
 }
 
@@ -104,6 +111,16 @@ header .container {
   box-shadow: 0 4px 40px 0 rgba(99, 138, 225, 0.15);
   color: #1730bd;
   font-size: 18px;
+  border-radius: 0px 0px 30px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main .buttons button::after {
+  content: url("../images/main-button.svg");
+  position: absolute;
+  bottom: -10px;
+  right: 0;
 }
 
 .main .buttons button:hover {
@@ -118,6 +135,8 @@ header .container {
 .info_block {
   width: 50%;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .info_block h1 {
   color: #1730bd;
